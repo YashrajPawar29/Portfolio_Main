@@ -106,7 +106,6 @@ export const projects = [
     title: "AI Risk Profiling",
     organization: "NYC Office of Technology and Innovation",
     period: "Dec '25",
-    description: "Designed AI Risk Profiles to help the city anticipate and manage potential risks linked to AI adoption across departments. Used the NIST AI Risk Management Framework to build structured profiles addressing algorithmic bias, data protection, and system reliability.",
     highlights: [
       "Combined qualitative research with analytical reasoning",
       "Translated complex technical risks into actionable guidance",
@@ -116,16 +115,39 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Cyber Bullying Detection",
+    organization: "Academic Project",
+    period: "Apr '23",
+    highlights: [
+      "Developed ML model to detect cyberbullying on social media platforms",
+      "Addressed mental health concerns affecting young users online",
+      "Built classification system to identify threatening content"
+    ],
+    tags: ["Machine Learning", "NLP", "Python", "Social Media"]
+  },
+  {
+    id: 3,
     title: "Lyrics Generator using Language Modelling",
     organization: "Personal Project",
     period: "Apr '23",
-    description: "Created a system that produces lyrics in response to requests by learning the structure and patterns from analyzing datasets of lyrics from 21 different artists. The project solves the difficulty of generating original, cohesive, and stylistically appropriate lyrics.",
     highlights: [
       "Analyzed lyrics dataset from 21 different artists",
       "Built language model learning song structure patterns",
       "Generated meaningful and stylistically appropriate content"
     ],
     tags: ["Machine Learning", "NLP", "Python", "Deep Learning"]
+  },
+  {
+    id: 4,
+    title: "Event Management Platform",
+    organization: "Academic Project",
+    period: "Nov '22",
+    highlights: [
+      "Built platform for coordination between supervisors and inspectors",
+      "Enabled department heads to assign and track pending tasks",
+      "Provided clean documentation system for event workflows"
+    ],
+    tags: ["Web Development", "Project Management", "Collaboration"]
   }
 ];
 
