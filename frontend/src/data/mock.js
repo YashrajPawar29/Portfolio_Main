@@ -161,13 +161,27 @@ export const certifications = [
   },
   {
     id: 2,
+    title: "Generative AI: Prompt Engineering Basics",
+    issuer: "IBM",
+    date: "2024",
+    icon: "award"
+  },
+  {
+    id: 3,
     title: "Entrepreneurship Essentials",
     issuer: "Harvard Business School Online",
     date: "Jun '23",
     icon: "graduation-cap"
   },
   {
-    id: 3,
+    id: 4,
+    title: "Sustainable Business Strategy",
+    issuer: "Harvard Business School Online",
+    date: "2023",
+    icon: "graduation-cap"
+  },
+  {
+    id: 5,
     title: "Business Analytics",
     issuer: "Harvard Business School Online",
     date: "Sept '21",
