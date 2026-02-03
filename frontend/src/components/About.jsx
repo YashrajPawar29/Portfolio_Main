@@ -39,9 +39,13 @@ const About = () => {
               <div className="absolute -inset-4 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-2xl blur-xl"></div>
               
               <div className="relative bg-slate-700/50 rounded-2xl p-8 border border-slate-600/50">
-                {/* Avatar placeholder with initials */}
-                <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-full flex items-center justify-center">
-                  <span className="text-4xl font-bold text-white">YP</span>
+                {/* Profile photo */}
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-emerald-500/30">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/myzf8w0c_02734501-4ccc-43ed-8ad8-976071a23ef6.jpg" 
+                    alt="Yashraj Pawar"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-white text-center mb-2">
