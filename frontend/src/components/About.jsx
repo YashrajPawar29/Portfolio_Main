@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Briefcase, GraduationCap, Target } from 'lucide-react';
+import { Briefcase, GraduationCap, Target } from 'lucide-react';
 import { personalInfo } from '../data/mock';
 
 const About = () => {
@@ -22,13 +22,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-slate-800">
+    <section id="about" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="text-center mb-16">
-          <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">About Me</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">Get to Know Me</h2>
-          <div className="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+          <span className="text-[#2563EB] text-sm font-medium tracking-wider uppercase">About Me</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2F2F2F] mt-3">Get to Know Me</h2>
+          <div className="w-20 h-1 bg-[#2563EB] mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
@@ -36,11 +36,11 @@ const About = () => {
           <div className="lg:col-span-2">
             <div className="relative">
               {/* Decorative frame */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-2xl blur-xl"></div>
+              <div className="absolute -inset-4 bg-gradient-to-br from-[#2563EB]/10 to-[#2563EB]/5 rounded-2xl blur-xl"></div>
               
-              <div className="relative bg-slate-700/50 rounded-2xl p-8 border border-slate-600/50">
+              <div className="relative bg-[#F8FAFC] rounded-2xl p-8 border border-gray-200">
                 {/* Profile photo */}
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-emerald-500/30">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-[#2563EB]/20">
                   <img 
                     src="https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/myzf8w0c_02734501-4ccc-43ed-8ad8-976071a23ef6.jpg" 
                     alt="Yashraj Pawar"
@@ -48,23 +48,23 @@ const About = () => {
                   />
                 </div>
                 
-                <h3 className="text-xl font-semibold text-white text-center mb-2">
+                <h3 className="text-xl font-semibold text-[#2F2F2F] text-center mb-2">
                   {personalInfo.name}
                 </h3>
-                <p className="text-emerald-400 text-center text-sm mb-6">
+                <p className="text-[#2563EB] text-center text-sm mb-6">
                   {personalInfo.title}
                 </p>
 
                 {/* Quick highlights */}
                 <div className="space-y-4">
                   {highlights.map((item, index) => (
-                    <div key={index} className="flex items-center gap-3 text-slate-300">
-                      <div className="w-10 h-10 bg-slate-600/50 rounded-lg flex items-center justify-center">
-                        <item.icon size={18} className="text-emerald-400" />
+                    <div key={index} className="flex items-center gap-3 text-[#2F2F2F]">
+                      <div className="w-10 h-10 bg-[#2563EB]/10 rounded-lg flex items-center justify-center">
+                        <item.icon size={18} className="text-[#2563EB]" />
                       </div>
                       <div>
-                        <p className="text-xs text-slate-400 uppercase tracking-wide">{item.title}</p>
-                        <p className="text-sm text-white">{item.description}</p>
+                        <p className="text-xs text-[#2F2F2F]/50 uppercase tracking-wide">{item.title}</p>
+                        <p className="text-sm text-[#2F2F2F]">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -75,27 +75,27 @@ const About = () => {
 
           {/* Right side - About content */}
           <div className="lg:col-span-3">
-            <div className="prose prose-invert max-w-none">
+            <div className="prose prose-gray max-w-none">
               {personalInfo.about.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-slate-300 leading-relaxed mb-6 text-lg">
+                <p key={index} className="text-[#2F2F2F]/70 leading-relaxed mb-6 text-lg">
                   {paragraph}
                 </p>
               ))}
             </div>
 
             {/* Quick stats */}
-            <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-slate-700">
+            <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-gray-200">
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-400">2+</div>
-                <p className="text-slate-400 text-sm mt-1">Years Experience</p>
+                <div className="text-3xl font-bold text-[#2563EB]">2+</div>
+                <p className="text-[#2F2F2F]/60 text-sm mt-1">Years Experience</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-400">5+</div>
-                <p className="text-slate-400 text-sm mt-1">Projects Completed</p>
+                <div className="text-3xl font-bold text-[#2563EB]">5+</div>
+                <p className="text-[#2F2F2F]/60 text-sm mt-1">Projects Completed</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-400">5</div>
-                <p className="text-slate-400 text-sm mt-1">Certifications</p>
+                <div className="text-3xl font-bold text-[#2563EB]">5</div>
+                <p className="text-[#2F2F2F]/60 text-sm mt-1">Certifications</p>
               </div>
             </div>
           </div>
