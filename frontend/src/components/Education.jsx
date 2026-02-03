@@ -7,44 +7,44 @@ const EducationCard = ({ edu, isLast }) => {
   const courseworkList = edu.coursework || [];
   
   return (
-    <div className="group relative bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/5">
+    <div className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-[#2563EB]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#2563EB]/5">
       {!isLast && (
-        <div className="absolute left-12 top-full w-0.5 h-8 bg-gradient-to-b from-emerald-500/50 to-transparent hidden md:block"></div>
+        <div className="absolute left-12 top-full w-0.5 h-8 bg-gradient-to-b from-[#2563EB]/50 to-transparent hidden md:block"></div>
       )}
       <div className="flex flex-col md:flex-row gap-6">
         <div className="flex-shrink-0">
-          <div className="w-16 h-16 bg-emerald-500/10 rounded-xl flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
-            <GraduationCap size={28} className="text-emerald-400" />
+          <div className="w-16 h-16 bg-[#2563EB]/10 rounded-xl flex items-center justify-center group-hover:bg-[#2563EB]/20 transition-colors">
+            <GraduationCap size={28} className="text-[#2563EB]" />
           </div>
         </div>
         <div className="flex-grow">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
             <div>
-              <h3 className="text-xl font-semibold text-white group-hover:text-emerald-400 transition-colors">
+              <h3 className="text-xl font-semibold text-[#2F2F2F] group-hover:text-[#2563EB] transition-colors">
                 {edu.institution}
               </h3>
-              <p className="text-emerald-400 font-medium mt-1">{edu.degree}</p>
-              {edu.gpa && <p className="text-slate-400 text-sm mt-1">{edu.gpa}</p>}
+              <p className="text-[#2563EB] font-medium mt-1">{edu.degree}</p>
+              {edu.gpa && <p className="text-[#2F2F2F]/60 text-sm mt-1">{edu.gpa}</p>}
             </div>
             <div className="flex flex-col items-start md:items-end gap-2">
-              <div className="flex items-center gap-2 text-slate-400 text-sm">
+              <div className="flex items-center gap-2 text-[#2F2F2F]/60 text-sm">
                 <MapPin size={14} />
                 {edu.location}
               </div>
-              <div className="flex items-center gap-2 text-slate-400 text-sm">
+              <div className="flex items-center gap-2 text-[#2F2F2F]/60 text-sm">
                 <Calendar size={14} />
                 {edu.period}
               </div>
             </div>
           </div>
           <div className="mt-4">
-            <div className="flex items-center gap-2 text-slate-400 text-sm mb-3">
+            <div className="flex items-center gap-2 text-[#2F2F2F]/60 text-sm mb-3">
               <BookOpen size={14} />
               <span>Relevant Coursework</span>
             </div>
             <div className="flex flex-wrap gap-2">
               {courseworkList.map((course, idx) => (
-                <Badge key={idx} variant="secondary" className="bg-slate-700/50 text-slate-300 hover:bg-slate-600/50 border-0">
+                <Badge key={idx} variant="secondary" className="bg-[#F8FAFC] text-[#2F2F2F]/70 hover:bg-[#2563EB]/10 border-0">
                   {course}
                 </Badge>
               ))}
@@ -61,12 +61,12 @@ const Education = () => {
   const totalItems = educationList.length;
 
   return (
-    <section id="education" className="py-24 bg-slate-900">
+    <section id="education" className="py-24 bg-[#F8FAFC]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">Education</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">Academic Background</h2>
-          <div className="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+          <span className="text-[#2563EB] text-sm font-medium tracking-wider uppercase">Education</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2F2F2F] mt-3">Academic Background</h2>
+          <div className="w-20 h-1 bg-[#2563EB] mx-auto mt-4 rounded-full"></div>
         </div>
         <div className="space-y-8">
           {educationList.map((edu, index) => (
