@@ -35,7 +35,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-slate-900/95 backdrop-blur-md shadow-lg'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
       }`}
     >
@@ -43,9 +43,9 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           <a
             href="#"
-            className="text-xl font-bold text-white tracking-tight hover:text-emerald-400 transition-colors"
+            className="text-xl font-bold text-[#2F2F2F] tracking-tight hover:text-[#2563EB] transition-colors"
           >
-            YP<span className="text-emerald-400">.</span>
+            YP<span className="text-[#2563EB]">.</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -54,14 +54,14 @@ const Header = () => {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className="text-slate-300 hover:text-emerald-400 transition-colors text-sm font-medium"
+                className="text-[#2F2F2F]/70 hover:text-[#2563EB] transition-colors text-sm font-medium"
               >
                 {link.name}
               </button>
             ))}
             <Button
               onClick={() => scrollToSection('#contact')}
-              className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:shadow-lg hover:shadow-emerald-500/25"
+              className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:shadow-lg hover:shadow-[#2563EB]/25"
             >
               Get In Touch
             </Button>
@@ -69,7 +69,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-[#2F2F2F] p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,20 +78,20 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-slate-700/50 pt-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-slate-300 hover:text-emerald-400 transition-colors text-sm font-medium text-left"
+                  className="text-[#2F2F2F]/70 hover:text-[#2563EB] transition-colors text-sm font-medium text-left"
                 >
                   {link.name}
                 </button>
               ))}
               <Button
                 onClick={() => scrollToSection('#contact')}
-                className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-lg text-sm font-medium w-full mt-2"
+                className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white px-5 py-2 rounded-lg text-sm font-medium w-full mt-2"
               >
                 Get In Touch
               </Button>
