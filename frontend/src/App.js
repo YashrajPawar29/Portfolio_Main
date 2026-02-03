@@ -17,7 +17,7 @@ import Footer from "./components/Footer";
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-[#F8FAFC]">
       <Header />
       <main>
         <Hero />
