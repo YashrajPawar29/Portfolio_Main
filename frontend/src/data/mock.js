@@ -4,7 +4,7 @@ export const personalInfo = {
   name: "Yashraj Pawar",
   title: "Data Analyst & Technology Management Professional",
   tagline: "Transforming complex data into actionable insights",
-  location: "New Jersey, USA",
+  location: "New York City, New York",
   phone: "+1 (973) 391-4127",
   email: "ypawar2904@gmail.com",
   about: `I'm a passionate Data Analyst pursuing my Master's in Management of Technology at NYU Tandon School of Engineering. With a strong foundation in Computer Engineering and Data Science, I specialize in transforming complex datasets into meaningful business insights.
