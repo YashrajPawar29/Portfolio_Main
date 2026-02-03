@@ -36,12 +36,14 @@ export const education = [
 
 export const skills = {
   technical: [
-    { name: "Python", level: 90 },
-    { name: "SQL", level: 95 },
-    { name: "Power BI", level: 90 },
-    { name: "Tableau", level: 85 },
-    { name: "MS Excel", level: 95 },
-    { name: "Figma", level: 75 }
+    "SQL",
+    "Python",
+    "MS Excel",
+    "MS PowerPoint",
+    "MS Office",
+    "Figma",
+    "Power BI",
+    "Tableau"
   ],
   analytical: [
     "Data Engineering",
