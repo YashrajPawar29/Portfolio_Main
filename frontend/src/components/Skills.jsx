@@ -1,17 +1,6 @@
 import React from 'react';
 import { skills } from '../data/mock';
 import { Code, Brain, TrendingUp, Users } from 'lucide-react';
-import { Progress } from './ui/progress';
-
-const SkillProgressItem = ({ skill }) => (
-  <div>
-    <div className="flex justify-between items-center mb-2">
-      <span className="text-slate-300 text-sm font-medium">{skill.name}</span>
-      <span className="text-emerald-400 text-sm">{skill.level}%</span>
-    </div>
-    <Progress value={skill.level} className="h-2 bg-slate-600/50" />
-  </div>
-);
 
 const SkillTag = ({ name }) => (
   <span className="px-4 py-2 bg-slate-600/40 text-slate-300 rounded-lg text-sm hover:bg-emerald-500/20 hover:text-emerald-300 transition-colors cursor-default">
@@ -31,29 +20,21 @@ const SkillCard = ({ category }) => {
         </div>
         <h3 className="text-xl font-semibold text-white">{category.title}</h3>
       </div>
-      {category.type === "progress" ? (
-        <div className="space-y-5">
-          {skillsList.map((skill, idx) => (
-            <SkillProgressItem key={idx} skill={skill} />
-          ))}
-        </div>
-      ) : (
-        <div className="flex flex-wrap gap-3">
-          {skillsList.map((skill, idx) => (
-            <SkillTag key={idx} name={skill} />
-          ))}
-        </div>
-      )}
+      <div className="flex flex-wrap gap-3">
+        {skillsList.map((skill, idx) => (
+          <SkillTag key={idx} name={skill} />
+        ))}
+      </div>
     </div>
   );
 };
 
 const Skills = () => {
   const skillCategories = [
-    { title: "Technical Skills", icon: Code, skills: skills.technical, type: "progress" },
-    { title: "Analytical Skills", icon: Brain, skills: skills.analytical, type: "tags" },
-    { title: "Business Skills", icon: TrendingUp, skills: skills.business, type: "tags" },
-    { title: "Soft Skills", icon: Users, skills: skills.soft, type: "tags" }
+    { title: "Technical Skills", icon: Code, skills: skills.technical },
+    { title: "Analytical Skills", icon: Brain, skills: skills.analytical },
+    { title: "Business Skills", icon: TrendingUp, skills: skills.business },
+    { title: "Soft Skills", icon: Users, skills: skills.soft }
   ];
 
   return (
