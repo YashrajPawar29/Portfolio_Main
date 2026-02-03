@@ -163,7 +163,7 @@ export const certifications = [
     id: 2,
     title: "Generative AI: Prompt Engineering Basics",
     issuer: "IBM",
-    date: "2024",
+    date: "Feb '26",
     icon: "award"
   },
   {
@@ -177,7 +177,7 @@ export const certifications = [
     id: 4,
     title: "Sustainable Business Strategy",
     issuer: "Harvard Business School Online",
-    date: "2023",
+    date: "Feb '23",
     icon: "graduation-cap"
   },
   {
