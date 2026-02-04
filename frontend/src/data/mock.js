@@ -7,11 +7,7 @@ export const personalInfo = {
   location: "New York City, New York",
   phone: "+1 (973) 391-4127",
   email: "ypawar2904@gmail.com",
-  about: `I am a highly motivated and intellectually curious Data Analyst currently pursuing my Master's degree in Management of Technology at NYU Tandon School of Engineering. With a robust academic foundation in Computer Engineering and Data Science, I specialize in synthesizing complex and large-scale datasets into actionable and strategically valuable business intelligence.
-
-My professional experience encompasses supply chain analytics, advanced data visualization, and AI risk management, allowing me to operate effectively at the convergence of technological innovation and business strategy. I leverage analytical and technical tools such as Python, SQL, Power BI, and Tableau to facilitate data-driven decision-making and organizational optimization.
-
-Furthermore, I am deeply committed to advocating for responsible and ethical AI adoption while utilizing structured analytical reasoning to address multifaceted, real-world business and technological challenges across diverse industries.`
+  about: `I am a highly motivated and intellectually curious Data Analyst currently pursuing my Master's degree in Management of Technology at NYU Tandon School of Engineering. With a robust academic foundation in Computer Engineering and Data Science, I specialize in synthesizing complex and large-scale datasets into actionable and strategically valuable business intelligence. My professional experience encompasses supply chain analytics, advanced data visualization, and AI risk management, allowing me to operate effectively at the convergence of technological innovation and business strategy. I leverage analytical and technical tools such as Python, SQL, Power BI, and Tableau to facilitate data-driven decision-making and organizational optimization. Furthermore, I am deeply committed to advocating for responsible and ethical AI adoption while utilizing structured analytical reasoning to address multifaceted, real-world business and technological challenges across diverse industries.`
 };
 
 export const education = [
