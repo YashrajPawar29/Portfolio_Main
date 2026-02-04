@@ -29,10 +29,20 @@ const Certifications = () => {
                 key={cert.id}
                 className="group bg-[#0d1117] rounded-2xl p-6 border border-white/10 hover:border-[#7C3AED]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#7C3AED]/5 hover:-translate-y-1"
               >
-                {/* Icon */}
-                <div className="w-14 h-14 bg-gradient-to-br from-[#7C3AED]/20 to-[#2563EB]/20 rounded-xl flex items-center justify-center mb-4 group-hover:from-[#7C3AED]/30 group-hover:to-[#2563EB]/30 transition-colors">
-                  <IconComponent size={26} className="text-[#22D3EE]" />
-                </div>
+                {/* Logo or Icon */}
+                {cert.logo ? (
+                  <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-4 p-2">
+                    <img 
+                      src={cert.logo} 
+                      alt={cert.issuer}
+                      className="w-10 h-10 object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#7C3AED]/20 to-[#2563EB]/20 rounded-xl flex items-center justify-center mb-4 group-hover:from-[#7C3AED]/30 group-hover:to-[#2563EB]/30 transition-colors">
+                    <IconComponent size={26} className="text-[#22D3EE]" />
+                  </div>
+                )}
 
                 {/* Title */}
                 <h3 className="text-lg font-semibold text-white group-hover:text-[#22D3EE] transition-colors mb-2">
