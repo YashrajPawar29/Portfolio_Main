@@ -13,9 +13,19 @@ const EducationCard = ({ edu, isLast }) => {
       )}
       <div className="flex flex-col md:flex-row gap-6">
         <div className="flex-shrink-0">
-          <div className="w-16 h-16 bg-gradient-to-br from-[#7C3AED]/20 to-[#2563EB]/20 rounded-xl flex items-center justify-center group-hover:from-[#7C3AED]/30 group-hover:to-[#2563EB]/30 transition-colors">
-            <GraduationCap size={28} className="text-[#22D3EE]" />
-          </div>
+          {edu.logo ? (
+            <div className="w-16 h-16 rounded-xl overflow-hidden bg-white flex items-center justify-center">
+              <img 
+                src={edu.logo} 
+                alt={edu.institution}
+                className="w-14 h-14 object-contain"
+              />
+            </div>
+          ) : (
+            <div className="w-16 h-16 bg-gradient-to-br from-[#7C3AED]/20 to-[#2563EB]/20 rounded-xl flex items-center justify-center group-hover:from-[#7C3AED]/30 group-hover:to-[#2563EB]/30 transition-colors">
+              <GraduationCap size={28} className="text-[#22D3EE]" />
+            </div>
+          )}
         </div>
         <div className="flex-grow">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
