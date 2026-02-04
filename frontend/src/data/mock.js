@@ -232,7 +232,7 @@ export const certifications = [
 ];
 
 export const socialLinks = {
-  linkedin: "https://linkedin.com/in/yashrajpawar",
-  github: "https://github.com/yashrajpawar",
+  linkedin: "https://www.linkedin.com/in/yashraj-pawar-9ba903203/",
+  github: "https://github.com/YashrajPawar29",
   email: "mailto:ypawar2904@gmail.com"
 };
