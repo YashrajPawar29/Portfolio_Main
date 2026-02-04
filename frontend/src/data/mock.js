@@ -155,35 +155,40 @@ export const certifications = [
     title: "Microsoft PL-300: Power BI Data Analyst Certification",
     issuer: "Microsoft",
     date: "Jan '26",
-    icon: "award"
+    icon: "award",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png"
   },
   {
     id: 2,
     title: "Generative AI: Prompt Engineering Basics",
     issuer: "IBM",
     date: "Feb '26",
-    icon: "award"
+    icon: "award",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/512px-IBM_logo.svg.png"
   },
   {
     id: 3,
     title: "Entrepreneurship Essentials",
     issuer: "Harvard Business School Online",
     date: "Jun '23",
-    icon: "graduation-cap"
+    icon: "graduation-cap",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/400px-Harvard_University_coat_of_arms.svg.png"
   },
   {
     id: 4,
     title: "Sustainable Business Strategy",
     issuer: "Harvard Business School Online",
     date: "Feb '23",
-    icon: "graduation-cap"
+    icon: "graduation-cap",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/400px-Harvard_University_coat_of_arms.svg.png"
   },
   {
     id: 5,
     title: "Business Analytics",
     issuer: "Harvard Business School Online",
     date: "Sept '21",
-    icon: "bar-chart"
+    icon: "bar-chart",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/400px-Harvard_University_coat_of_arms.svg.png"
   }
 ];
 
