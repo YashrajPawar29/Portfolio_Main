@@ -27,7 +27,8 @@ export const education = [
     location: "Mumbai, India",
     period: "May '24",
     gpa: "CGPA: 3.36 / 4.0",
-    coursework: ["Data Structures", "Machine Learning", "Database Management Systems", "Data Mining", "Project Management", "Data Science"]
+    coursework: ["Data Structures", "Machine Learning", "Database Management Systems", "Data Mining", "Project Management", "Data Science"],
+    logo: "https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/dwetf0qb_image.png"
   }
 ];
 
