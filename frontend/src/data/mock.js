@@ -81,7 +81,8 @@ export const experience = [
       "Content review, editing, and development of new case studies",
       "Research on global supply chain trends and digital transformation",
       "Published acknowledgement in industry-recognized book"
-    ]
+    ],
+    logo: "https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/y6xbgl0y_image.png"
   },
   {
     id: 2,
