@@ -88,14 +88,6 @@ const Hero = () => {
             Contact Me
           </Button>
         </div>
-
-        {/* Scroll indicator */}
-        <button
-          onClick={scrollToAbout}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/40 hover:text-[#22D3EE] transition-colors animate-bounce"
-        >
-          <ArrowDown size={24} />
-        </button>
       </div>
     </section>
   );
