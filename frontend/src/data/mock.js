@@ -21,7 +21,7 @@ export const education = [
     degree: "Master's in Management of Technology",
     location: "Brooklyn, New York, USA",
     period: "Graduating May '26",
-    coursework: ["Financial Analysis for Tech Managers", "Statistics for Data Analysts", "Economics and Strategy", "Global Innovation"]
+    coursework: ["Statistics for Data Analysis", "Supply Chain Management", "Operations Management", "Project Management", "Human Capital Big Data, Predictive Analysis & ROI"]
   },
   {
     id: 2,
