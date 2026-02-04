@@ -72,11 +72,22 @@ export const skills = {
 export const experience = [
   {
     id: 1,
+    title: "Engagement Ambassador",
+    company: "New York University",
+    location: "New York, USA",
+    period: "Jan '26 – Present",
+    highlights: [
+      "Engaged alumni through outreach calls to strengthen the alumni network",
+      "Represented NYU professionally while building long-term relationships",
+      "Recorded interactions and supported engagement campaigns"
+    ]
+  },
+  {
+    id: 2,
     title: "Supply Chain Analyst Trainee",
     company: "Boston Strategies International",
     location: "New York, USA",
     period: "May '25 – Aug '25",
-    description: "Contributed to the updated edition of 'Guide to Supply Chain Management' by David Stevan Jacoby. Conducted in-depth research on global supply chain trends, digital transformation, and emerging technologies. Recognized in the book's acknowledgements for contributions to contemporary supply chain challenges and innovations.",
     highlights: [
       "Content review, editing, and development of new case studies",
       "Research on global supply chain trends and digital transformation",
@@ -85,16 +96,39 @@ export const experience = [
     logo: "https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/y6xbgl0y_image.png"
   },
   {
-    id: 2,
+    id: 3,
     title: "Data Analyst Intern",
     company: "Morsuns Coating System Co.Pvt, LVT",
     location: "Mumbai, India",
     period: "Aug '23 – Oct '23",
-    description: "Visualized data for over ten projects to support strategic decision making. Performed extensive data correction and transformation tasks using Python and Microsoft Excel, ensuring data accuracy and consistency throughout the analysis process.",
     highlights: [
       "Visualized data for 10+ projects supporting strategic decisions",
       "Data correction and transformation using Python & Excel",
       "Enhanced reliability of analytics across various projects"
+    ]
+  },
+  {
+    id: 4,
+    title: "Operations & Stakeholder Coordination Support",
+    company: "FIFA U-17 Women's World Cup",
+    location: "India",
+    period: "Sept '22 – Nov '22",
+    highlights: [
+      "Handled operational requests from FIFA officials and AIFF",
+      "Supported match-day logistics and operational coordination",
+      "Maintained clear communication in high-priority event situations"
+    ]
+  },
+  {
+    id: 5,
+    title: "Accreditation & Stadium Management Volunteer",
+    company: "Indian Premier League 2022",
+    location: "India",
+    period: "Mar '22 – May '22",
+    highlights: [
+      "Managed accreditation access for staff, vendors, and officials",
+      "Supported stadium operations and crowd flow during match days",
+      "Coordinated with teams in a fast-paced international event environment"
     ]
   }
 ];
