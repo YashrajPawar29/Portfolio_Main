@@ -17,7 +17,7 @@ const About = () => {
     {
       icon: Target,
       title: "Focus",
-      description: "AI Risk & Business Intelligence"
+      description: "Analytics, Business Intelligence & Data-Driven Operations"
     }
   ];
 
