@@ -81,7 +81,7 @@ export const experience = [
       "Represented NYU professionally while building long-term relationships",
       "Recorded interactions and supported engagement campaigns"
     ],
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/16/New_York_University_Seal.svg/400px-New_York_University_Seal.svg.png"
+    logo: "https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/gztn39u9_image.png"
   },
   {
     id: 2,
