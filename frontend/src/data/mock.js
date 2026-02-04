@@ -148,7 +148,8 @@ export const projects = [
       "Translated complex technical risks into actionable guidance",
       "Promoted responsible, transparent AI adoption in public sector"
     ],
-    tags: ["AI", "Risk Management", "Government", "NIST Framework"]
+    tags: ["AI", "Risk Management", "Government", "NIST Framework"],
+    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80"
   },
   {
     id: 2,
@@ -160,7 +161,8 @@ export const projects = [
       "Addressed mental health concerns affecting young users online",
       "Built classification system to identify threatening content"
     ],
-    tags: ["Machine Learning", "NLP", "Python", "Social Media"]
+    tags: ["Machine Learning", "NLP", "Python", "Social Media"],
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80"
   },
   {
     id: 3,
@@ -172,7 +174,8 @@ export const projects = [
       "Built language model learning song structure patterns",
       "Generated meaningful and stylistically appropriate content"
     ],
-    tags: ["Machine Learning", "NLP", "Python", "Deep Learning"]
+    tags: ["Machine Learning", "NLP", "Python", "Deep Learning"],
+    image: "https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=600&q=80"
   },
   {
     id: 4,
@@ -184,7 +187,8 @@ export const projects = [
       "Enabled department heads to assign and track pending tasks",
       "Provided clean documentation system for event workflows"
     ],
-    tags: ["Web Development", "Project Management", "Collaboration"]
+    tags: ["Web Development", "Project Management", "Collaboration"],
+    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80"
   }
 ];
 
