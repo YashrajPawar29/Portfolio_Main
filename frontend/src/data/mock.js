@@ -17,7 +17,8 @@ export const education = [
     degree: "Master's in Management of Technology",
     location: "Brooklyn, New York, USA",
     period: "Graduating May '26",
-    coursework: ["Statistics for Data Analysis", "Supply Chain Management", "Operations Management", "Project Management", "Human Capital Big Data, Predictive Analysis & ROI"]
+    coursework: ["Statistics for Data Analysis", "Supply Chain Management", "Operations Management", "Project Management", "Human Capital Big Data, Predictive Analysis & ROI"],
+    logo: "https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/gztn39u9_image.png"
   },
   {
     id: 2,
