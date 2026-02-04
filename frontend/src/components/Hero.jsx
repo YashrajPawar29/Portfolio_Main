@@ -63,13 +63,6 @@ const Hero = () => {
             <Mail size={16} className="text-[#22D3EE]" />
             {personalInfo.email}
           </a>
-          <a 
-            href={`tel:${personalInfo.phone}`}
-            className="flex items-center gap-2 text-white/60 text-sm bg-white/5 px-4 py-2 rounded-full border border-white/10 hover:border-[#22D3EE]/30 transition-colors"
-          >
-            <Phone size={16} className="text-[#22D3EE]" />
-            {personalInfo.phone}
-          </a>
         </div>
 
         {/* CTA Buttons */}
