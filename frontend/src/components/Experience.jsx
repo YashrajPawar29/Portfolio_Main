@@ -18,9 +18,19 @@ const ExperienceCard = ({ exp, isEven }) => {
       <div className={`ml-8 md:ml-0 md:w-1/2 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
         <div className="group bg-[#0B0F19] rounded-2xl p-6 border border-white/10 hover:border-[#7C3AED]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#7C3AED]/5">
           <div className="flex items-start justify-between mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-[#7C3AED]/20 to-[#2563EB]/20 rounded-xl flex items-center justify-center group-hover:from-[#7C3AED]/30 group-hover:to-[#2563EB]/30 transition-colors">
-              <Briefcase size={22} className="text-[#22D3EE]" />
-            </div>
+            {exp.logo ? (
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center overflow-hidden">
+                <img 
+                  src={exp.logo} 
+                  alt={exp.company}
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+            ) : (
+              <div className="w-12 h-12 bg-gradient-to-br from-[#7C3AED]/20 to-[#2563EB]/20 rounded-xl flex items-center justify-center group-hover:from-[#7C3AED]/30 group-hover:to-[#2563EB]/30 transition-colors">
+                <Briefcase size={22} className="text-[#22D3EE]" />
+              </div>
+            )}
             <div className="flex items-center gap-2 text-white/50 text-sm">
               <Calendar size={14} />
               {exp.period}
