@@ -80,7 +80,8 @@ export const experience = [
       "Engaged alumni through outreach calls to strengthen the alumni network",
       "Represented NYU professionally while building long-term relationships",
       "Recorded interactions and supported engagement campaigns"
-    ]
+    ],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/New_York_University_Seal.svg/400px-New_York_University_Seal.svg.png"
   },
   {
     id: 2,
@@ -105,7 +106,8 @@ export const experience = [
       "Visualized data for 10+ projects supporting strategic decisions",
       "Data correction and transformation using Python & Excel",
       "Enhanced reliability of analytics across various projects"
-    ]
+    ],
+    logo: "https://customer-assets.emergentagent.com/job_portfolio-showcase-628/artifacts/7ve6bpxj_image.png"
   },
   {
     id: 4,
@@ -117,7 +119,8 @@ export const experience = [
       "Handled operational requests from FIFA officials and AIFF",
       "Supported match-day logistics and operational coordination",
       "Maintained clear communication in high-priority event situations"
-    ]
+    ],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/FIFA_logo_without_slogan.svg/400px-FIFA_logo_without_slogan.svg.png"
   },
   {
     id: 5,
@@ -129,7 +132,8 @@ export const experience = [
       "Managed accreditation access for staff, vendors, and officials",
       "Supported stadium operations and crowd flow during match days",
       "Coordinated with teams in a fast-paced international event environment"
-    ]
+    ],
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Indian_Premier_League_Official_Logo.svg/400px-Indian_Premier_League_Official_Logo.svg.png"
   }
 ];
 
