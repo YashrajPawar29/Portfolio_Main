@@ -81,7 +81,7 @@ export const experience = [
       "Represented NYU professionally while building long-term relationships",
       "Recorded interactions and supported engagement campaigns"
     ],
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/New_York_University_Seal.svg/400px-New_York_University_Seal.svg.png"
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/16/New_York_University_Seal.svg/400px-New_York_University_Seal.svg.png"
   },
   {
     id: 2,
