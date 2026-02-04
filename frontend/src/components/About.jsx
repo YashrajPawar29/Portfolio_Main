@@ -86,7 +86,7 @@ const About = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-2 gap-6 mt-10 pt-10 border-t border-white/10">
               <div className="text-center">
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#22D3EE]">5+</div>
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#22D3EE]">4+</div>
                 <p className="text-white/50 text-sm mt-1">Projects Completed</p>
               </div>
               <div className="text-center">
