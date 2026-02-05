@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Main/static/css/main.1e9c47a7.css",
+    "main.js": "/Portfolio_Main/static/js/main.79277f7d.js",
+    "index.html": "/Portfolio_Main/index.html",
+    "main.1e9c47a7.css.map": "/Portfolio_Main/static/css/main.1e9c47a7.css.map",
+    "main.79277f7d.js.map": "/Portfolio_Main/static/js/main.79277f7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e9c47a7.css",
+    "static/js/main.79277f7d.js"
+  ]
+}
