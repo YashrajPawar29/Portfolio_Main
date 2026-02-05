@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 import { personalInfo, socialLinks } from '../data/mock';
+import { apiFetch } from '../lib/api';
 
 const Contact = () => {
+  const [serverMsg, setServerMsg] = useState(null);
   const contactInfo = [
     {
       icon: Mail,
@@ -35,6 +37,22 @@ const Contact = () => {
           <p className="text-white/50 mt-6 max-w-lg mx-auto">
             Have a question or want to work together? Feel free to reach out!
           </p>
+          <div className="mt-6 text-center">
+            <button
+              onClick={async () => {
+                try {
+                  const data = await apiFetch('/');
+                  setServerMsg(data?.message ?? JSON.stringify(data));
+                } catch (err) {
+                  setServerMsg(err.message);
+                }
+              }}
+              className="inline-block px-4 py-2 bg-[#7C3AED] text-white rounded-md hover:opacity-90 transition"
+            >
+              Check backend
+            </button>
+            {serverMsg && <p className="text-white/60 mt-2">{serverMsg}</p>}
+          </div>
         </div>
 
         {/* Contact cards */}

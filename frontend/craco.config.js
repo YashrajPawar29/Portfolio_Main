@@ -7,9 +7,10 @@ require("dotenv").config();
 const isDevServer = process.env.NODE_ENV !== "production";
 
 // Environment variable overrides
+// Visual edits are disabled by default; enable explicitly with ENABLE_VISUAL_EDITS=true
 const config = {
   enableHealthCheck: process.env.ENABLE_HEALTH_CHECK === "true",
-  enableVisualEdits: isDevServer, // Only enable during dev server
+  enableVisualEdits: process.env.ENABLE_VISUAL_EDITS === "true",
 };
 
 // Conditionally load visual edits modules only in dev mode
@@ -99,6 +100,14 @@ webpackConfig.devServer = (devServerConfig) => {
       return middlewares;
     };
   }
+  // Ensure API proxy forwards to backend during development
+  devServerConfig.proxy = devServerConfig.proxy || {
+    '/api': {
+      target: 'http://127.0.0.1:8000',
+      changeOrigin: true,
+      secure: false,
+    },
+  };
 
   return devServerConfig;
 };
